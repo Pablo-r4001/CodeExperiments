@@ -1,0 +1,29 @@
+DECLARE an int array to hold the location cells. locationCells
+DECLARE an int to hold the number of hits. Call it numOfHits and SET it to 0
+
+DECLARE CheckYourself()method that takes a String for the user's guess ("1", "3", etc.) 
+	and returns a result representing a "Hit", "Miss", or "kill"
+DECLARE a setLocationCells setter method that takes an int array 
+WHICH HAS THE THREE CELL LOCATIONS AS INTS.
+
+METHOD: String check yourself(String userGuess)
+	GET the user-s guess as a String parameter.
+	CONVERT the user guess to an int
+	REPEAT with each of the loation cells in the int array
+		//COMPARE the user's guess to the location cell
+		IF the user guess matches
+			INCREMENT the number of hits
+			// FIND OUT if it was the last location cell
+		IF number of hits is 3, Return "Kill" as the reslutlt
+			ELSE it was not a kill so return "hit"
+		END IF
+	ELSE the user guess did not match, so RETURN "niss
+	END IF
+END REPEAT
+END METHOD
+
+METHOD: void set LocationCells(int[] cellLocations)
+	GET the cell locations as an int array parameter
+	Assign the cell locations parameter to the cell locations instance variable.
+END METHOD
+
